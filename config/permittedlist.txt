@@ -1,1 +1,4 @@
-// List permitted players ID ONE per line
+// List permitted players ID  ONE per line
+76561197973374722
+76561197987529611
+76561198392805374
