@@ -13,6 +13,7 @@ Replace my repository with your URL of your forked repository.
 
 ```
 sudo apt install -y git
+cd ~
 git clone https://github.com/Josh-XT/Valheim.git
 cd Valheim
 cp example.env .env
