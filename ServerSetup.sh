@@ -13,3 +13,9 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose -y
 sudo service docker start
+# Check if Midgard.db and Midgard.fwl exist
+if [ ! -f "config/worlds/Midgard.db" ] || [ ! -f "config/worlds/Midgard.fwl" ]; then
+  # If they don't, copy Midgard.db.old and Midgard.fwl.old from config/worlds
+  cp config/worlds/Midgard.db.old config/worlds/Midgard.db
+  cp config/worlds/Midgard.fwl.old config/worlds/Midgard.fwl
+fi
