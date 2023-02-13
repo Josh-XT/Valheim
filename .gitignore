@@ -1,4 +1,5 @@
 .env
-config/worlds_local
+configs/worlds_local/*.db
+configs/worlds_local/*.fwl
 config/backups
 data
